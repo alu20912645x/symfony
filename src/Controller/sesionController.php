@@ -9,19 +9,19 @@ class sesionController extends Controller{
     /**
     * @Route("/login", name="tienda_login", methods={"GET","POST"})
     */
-    public function login()
+    public function login(SessionInterface $session)
       {}
 
     /**
     * @Route("/login/nombreusu", name="tienda_login_usuario", methods={"GET"})
     */
-    public function login_usu()
+    public function login_usu(SessionInterface $session)
       {}
 
     /**
     * @Route("/register", name="tienda_register", methods={"GET","POST"})
     */
-    public function register()
+    public function register(SessionInterface $session)
       {}
 
 }

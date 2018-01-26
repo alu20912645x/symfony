@@ -5,7 +5,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
 
-class carroController extends Controller{
+class carroController extends Controller
+  {
     /**
     * @Route("/carro/{accion}/{id}/{cantidad}", name="tienda_carro", requirements={"cantidad"="\d+","id"="^id\d+"})
     */
@@ -13,5 +14,5 @@ class carroController extends Controller{
       {return new Response('<html><body>Aquí mostraremos el carrito de la compra.</body></html>');}
 
 
-}
+    }
 ?>
